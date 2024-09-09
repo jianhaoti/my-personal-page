@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/dist/client/image";
+import Image from "next/image";
 
 const CircularImage = () => {
-  const myface = "/mememe.jpeg";
+  const myface = "/me.png";
 
   return (
     <div

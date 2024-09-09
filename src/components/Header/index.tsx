@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { IconDown } from "./icon";
 import styles from "./styles.module.scss";
 import CircularImage from "../CircularImage";
 
@@ -7,45 +6,37 @@ type Props = {
   isHome?: boolean;
 };
 
-const Header = ({ isHome }: Props) => {
+const Header = ({ isHome = false }: Props) => {
   return (
     <header className={styles.container}>
       <nav>
         <div className={styles.navTop}>
-          {/* <CircularImage /> */}
-
-          <ul>
-            <li>
-              <Link href="https://github.com/noodlewavey/">
-                <a>Github</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>LinkedIn</a>
-              </Link>
-            </li>
-            <li>
-              {/* <Link href="/"> */}
-              <a>email:jasminewangdev@outlook.com</a>
-              {/* </Link> */}
-            </li>
-          </ul>
+          <CircularImage />
+          <li>
+            <Link href="https://github.com/jianhaoti/">Github</Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/in/paul-tee-2205b7b0/">
+              LinkedIn
+            </Link>
+          </li>
+          <li>
+            <a href="mailto:jianhaoti@gmail.com">email: jianhaoti@gmail.com</a>
+          </li>
+        </div>
+        <div className={styles.content}>
+          {isHome ? (
+            <>
+              <div className={styles.content}>
+                <h1>Hello, I'm Paul</h1>
+                <p style={{ fontWeight: "100" }}>
+                  Math/CS Student looking for a Software Engineering Internship
+                </p>
+              </div>
+            </>
+          ) : null}
         </div>
       </nav>
-
-      {isHome === true ? (
-        <>
-          <div className={styles.content}>
-            <h1>Hello, I`m Jasmine!</h1>
-
-            <p style={{ fontWeight: "100" }}>
-              McGill CS Student looking for a New Grad Software Engineering Position!
-            </p>
-          </div>
-          <IconDown />
-        </>
-      ) : null}
     </header>
   );
 };

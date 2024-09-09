@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
+import CardPhoto from "../CardPhoto";
 
 const Card = () => {
   const { ref, inView } = useInView({
@@ -13,39 +14,11 @@ const Card = () => {
   const imageAnimation = useAnimation();
 
   return (
-    <div className={styles.card}>
-      <motion.div
-        className={styles.cardContent}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{
-          duration: 2,
-          type: "spring",
-        }}
-        variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 },
-        }}
-      >
-        <div className={styles.contentTop}>
-          <h2>01 / TRAITMATE DATING APP</h2>
-          <p className={styles.subtitle}>
-            A dating app which matches users with other people based on their
-            Big Five personality score.
-          </p>
-          <p>
-            Front-end developed in ReactJS using Material UI Components, backend
-            developed with Java Spring Boot, with user authentication secured
-            with Spring Security and a user database created with MySQL.
-          </p>
-          <a href="http://traitmate.vercel.app" target="_blank" rel="noreferrer">
-            Try out my dating app! ↗
-          </a>
-        </div>
-      </motion.div>
-      <div ref={ref}>
+    <div>
+      <div className={styles.card}>
+        {/* Left Text */}
         <motion.div
+          className={styles.cardContent}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -58,18 +31,54 @@ const Card = () => {
             hidden: { opacity: 0, scale: 0 },
           }}
         >
-          <div style={{ borderRadius: "15px", overflow: "hidden" }}>
-            <iframe
-              width="640"
-              height="480"
-              src="https://www.youtube.com/embed/cHa9tw_Cbsc?si=R08F8f8XL-nVTzpz"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className={styles.contentTop}>
+            <h2>01 / VSM 800</h2>
+            <p className={styles.subtitle}>
+              A iOS music sampler for the iPad which allows users to create
+              their own beats
+            </p>
+            <p>
+              Developed in Swift using SwiftUI for the front-end, and
+              AVFoundation for the audio engine
+            </p>
+            <a
+              href="http://traitmate.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Try out my sampler ↗
+            </a>
           </div>
         </motion.div>
+        {/* Right Video */}
+        <div ref={ref}>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{
+              duration: 2,
+              type: "spring",
+            }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+          >
+            <div style={{ borderRadius: "15px", overflow: "hidden" }}>
+              <iframe
+                width="640"
+                height="480"
+                src="https://www.youtube.com/embed/7cAwlrH9xec?si=DI7zSIR4olew3sbu"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </motion.div>
+        </div>
       </div>
+      <CardPhoto />
     </div>
   );
 };

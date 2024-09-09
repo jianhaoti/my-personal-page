@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           type: "website",
           locale: "en_US",
           url: "https://mportfolio-nine.vercel.app/",
-          site_name: "Jasmine Wang",
+          site_name: "Paul Tee",
           images: [
             {
               url: "https://mportfolio-nine.vercel.app/thumbnail.png",

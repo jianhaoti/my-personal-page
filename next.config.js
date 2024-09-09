@@ -1,14 +1,9 @@
 const path = require("path");
-const withSass = require("@zeit/next-sass");
-
-module.exports = withSass({
-  cssModules: true,
-});
 
 module.exports = {
-  /* Adicione sua pasta padrão de SCSS aqui! */
+  // Enable Sass support and configure Sass options
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [path.join(__dirname, "styles")], // Add your custom Sass directory here
   },
+  cssModules: true, // Enable CSS Modules (Optional)
 };
-

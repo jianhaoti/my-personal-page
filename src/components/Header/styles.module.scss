@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0;
-  margin-bottom: 120px;
+  padding: 30px 0;
+  margin-bottom: 100px;
 
   a {
     text-decoration: none;
@@ -24,7 +24,12 @@
     flex-direction: row;
     list-style-type: none;
     padding: 0;
+    color: $mainBlack;
   }
+}
+
+.container {
+  padding-bottom: 70px; /* Adjust this value as needed */
 }
 
 .content {
@@ -35,13 +40,11 @@
 
   h1 {
     color: $mainBlack;
-    max-width: 360px;
-
     @include heading1;
   }
 
   p {
-    color: $mainGray;
+    color: $mainBlack;
     max-width: 580px;
 
     @include heading2;
