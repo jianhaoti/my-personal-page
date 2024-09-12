@@ -42,7 +42,7 @@ const Card = () => {
               AVFoundation for the audio engine
             </p>
             <a
-              href="http://traitmate.vercel.app"
+              href="https://apps.apple.com/us/app/vsm-800/id6670715249"
               target="_blank"
               rel="noreferrer"
             >

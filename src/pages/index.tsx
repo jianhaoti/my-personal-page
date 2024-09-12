@@ -9,7 +9,6 @@ const Home: NextPage = () => {
   return (
     <Layout isHome>
       <NextSeo title="Paul's Portfolio" description="My Projects" />
-
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
