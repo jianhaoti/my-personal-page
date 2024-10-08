@@ -23,9 +23,10 @@ const Header = ({ isHome = false }: Props) => {
           {isHome ? (
             <>
               <div className={styles.content}>
-                <h1>Hello, I&#39;m Paul</h1>{" "}
+                <h1>Paul's Portfolio</h1>{" "}
                 <p style={{ fontWeight: "100" }}>
-                  Math/CS student looking for a software engineering internship
+                  Math & CS student looking for a software engineering
+                  internship
                 </p>
               </div>
             </>

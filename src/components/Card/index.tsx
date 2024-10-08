@@ -34,7 +34,7 @@ const Card = () => {
           <div className={styles.contentTop}>
             <h2>01 / VSM 800</h2>
             <p className={styles.subtitle}>
-              A iOS music sampler for the iPad which allows users to create
+              An iOS music sampler for the iPad which allows users to create
               their own beats
             </p>
             <p>
