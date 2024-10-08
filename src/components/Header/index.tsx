@@ -23,12 +23,12 @@ const Header = ({ isHome = false }: Props) => {
           {isHome ? (
             <>
               <div className={styles.content}>
-                <h1>Paul's Portfolio</h1>{" "}
+                <h1>Paul&apos;s Portfolio</h1>
                 <p style={{ fontWeight: "100" }}>
-                  Math & CS student looking for a software engineering
+                  Math &amp; CS student looking for a software engineering
                   internship
                 </p>
-              </div>
+              </div>{" "}
             </>
           ) : null}
         </div>
