@@ -16,12 +16,7 @@ const Header = ({ isHome = false }: Props) => {
             <Link href="https://github.com/jianhaoti/">Github</Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/in/paul-tee-2205b7b0/">
-              LinkedIn
-            </Link>
-          </li>
-          <li>
-            <a href="mailto:jianhaoti@gmail.com">email: jianhaoti@gmail.com</a>
+            <a href="mailto:paul.tee@uconn.edu">email: paul.tee@uconn.edu</a>
           </li>
         </div>
         <div className={styles.content}>
