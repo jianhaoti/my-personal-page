@@ -14,6 +14,7 @@
 
     &:hover {
       color: $mainGray;
+      cursor: pointer; // for resume button styling
     }
   }
 
@@ -54,4 +55,42 @@
     margin-top: 72px;
     margin-bottom: 320px;
   }
+}
+
+/* Modal styles */
+.modal {
+  width: 55%;
+  height: 90%;
+  margin: auto;
+  padding: 0; /* Remove padding */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+}
+
+/* Center the modal vertically and horizontally */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Dim background */
+  z-index: 1000;
+}
+
+/* PDF iframe styling */
+.iframe {
+  width: 100%; /* Full width of the modal */
+  height: 100%; /* Full height of the modal */
+  border: none; /* Remove borders */
+  margin: 0;
+  padding: 0;
+  outline: none;
+  pointer-events: none;
 }
