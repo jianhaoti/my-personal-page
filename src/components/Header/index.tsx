@@ -28,9 +28,7 @@ const Header = ({ isHome = false }: Props) => {
           </li>
 
           <li>
-            <a href="https://www.linkedin.com/in/paul-tee-2205b7b0/">
-              LinkedIn
-            </a>
+            <a href="https://www.linkedin.com/in/paul-tee/">LinkedIn</a>
           </li>
         </div>
         <div className={styles.content}>
