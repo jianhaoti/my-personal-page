@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const CircularImage = () => {
-  const myface = "/me.png";
+  const myface = "/462534204_2403688143316562_8580643049387228668_n.jpg";
 
   return (
     <div
