@@ -31,7 +31,7 @@ const Card2 = () => {
           }}
         >
           <div className={styles.contentTop}>
-            <h2>02 / Graph Visual </h2>
+            <h2>02 / GraphViz </h2>
             <p className={styles.subtitle}>
               A React web app which allow users to create their own graphs, and
               step-through common graph algorithms alongside its pseudocode
